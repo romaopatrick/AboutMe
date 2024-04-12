@@ -1,0 +1,42 @@
+.career-container {
+    display: flex;
+    flex-direction: column;
+    align-items: 'center';
+    color: #FFFFFF;
+    align-items: center;
+    padding-bottom: 20px;
+    
+    .title-container {
+        padding-top: 40px;
+        width: 95%;
+    }
+    .ant-typography {
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    picture, img {
+        border-radius: 100%;
+        width: 200px;
+        height: 260px;
+    }
+}
+
+.presentation-container {
+    background-color: rgba(0, 0, 0, 0.602);
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    align-items: start;
+    text-align: justify;
+
+    .paragraph {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+   
+
+    height: fit-content;
+}

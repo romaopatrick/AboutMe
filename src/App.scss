@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  .ant-layout-header {
+    background: transparent !important;
+  }
+
+  .ant-layout-content {
+    width: 100vw;
+    overflow: auto;
+    padding: 0;
+  }
+}

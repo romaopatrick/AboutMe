@@ -1,0 +1,23 @@
+.contact-container {
+    padding-left: 50px;
+    padding-top: 50px;
+    align-items: start;
+    text-align: start;
+    gap: 30px;
+
+    .ant-typography {
+        color: white;
+        padding: 0;
+        margin: 0;
+        text-align: start;
+    }
+
+    .item-container {
+        height: fit-content;
+        width: fit-content;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+}

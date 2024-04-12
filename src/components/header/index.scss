@@ -1,0 +1,22 @@
+.header-container {
+
+    .ant-menu {
+        width: 100%;
+        font-family: inherit;
+        font-size: 1.2rem;
+        background: transparent !important;
+        .ant-menu-item-selected {
+            background: transparent;
+            color: rgb(0, 255, 132);
+
+            &:hover {
+                background: transparent;
+                color: rgb(4, 210, 111);
+            }
+        }
+    }
+
+    .ant-menu:hover {
+        background: rgba(0, 0, 0, 0.372);
+    }
+}
