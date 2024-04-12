@@ -11,7 +11,7 @@ import { Contact } from './components/contact/index.tsx'
 const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: '/AboutMe',
       element: <App />,
       children: [
         {
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
       ]
     },
 
-  ]
+  ], { basename: "/AboutMe" }
 )
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
