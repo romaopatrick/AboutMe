@@ -11,7 +11,7 @@ import { Contact } from './components/contact/index.tsx'
 const router = createBrowserRouter(
   [
     {
-      path: '/AboutMe',
+      path: '*',
       element: <App />,
       children: [
         {
