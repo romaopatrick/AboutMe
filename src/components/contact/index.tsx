@@ -22,7 +22,6 @@ export function Contact() {
         <CustomScroll heightRelativeToParent="100%">
             <Flex className="contact-container" vertical>
                 <Title level={1}>Contacts</Title>
-                <br />
                 <Link to={urls.linkedIn} target="_blank">
                     <Flex className="item-container">
                         <img src={LinkedIn.toString()} width={60} />

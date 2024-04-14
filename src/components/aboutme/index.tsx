@@ -9,11 +9,11 @@ import { CustomScroll } from "react-custom-scroll";
 export function Career() {
     return <CustomScroll heightRelativeToParent="100%">
         <Flex className="career-container" vertical align="center">
-            <Flex className="title-container" align="center" justify="center" gap={100}>
+            <div className="title-container">
                 <Avatar
                     size={200}
                     src={imgpath} />
-                <Flex vertical align="end">
+                <Flex vertical className="title-description-container">
                     <Title style={{ margin: 0 }}>
                         Patrick Romão Hernandez
                     </Title>
@@ -23,7 +23,7 @@ export function Career() {
 
                     <Paragraph className="paragraph"><i>Brazil</i></Paragraph>
                 </Flex>
-            </Flex>
+            </div>
             <br />
             <br />
             <Presentation />

@@ -1,9 +1,7 @@
 .technology-stack-container {
-    overflow: auto;
     margin: 0;
     height: 100%;
     width: 100%;
-    color: #FFFFFF;
     align-items: center;
 
     .ant-typography {
@@ -21,7 +19,9 @@
         width: 90%;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        row-gap: 25px;
+        column-gap: 25px;
+        padding-bottom: 25px;
     }
 
     .endark {

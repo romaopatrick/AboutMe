@@ -5,7 +5,7 @@ import Paragraph from "antd/es/typography/Paragraph";
 export function Presentation() {
     return (
         <Flex vertical className="presentation-container">
-            <Title>About Patrick</Title>
+            <Title>Presentation</Title>
             <br/>
             <Paragraph className="paragraph">Hey there, my name is Patrick and I'm a software developer since 17 years old.</Paragraph>
             <br />

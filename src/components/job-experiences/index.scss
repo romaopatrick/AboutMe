@@ -20,11 +20,21 @@
 
     .list {
         width: 95%;
+        gap: 2vw;
+        
+        @media screen {
+            @media (max-width: 1026px) {
+                flex-direction: column;
+            }
+        }
+
         .endark {
             background-color: rgba(0, 0, 0, 0.602);
             padding: 20px;
             height: fit-content;
             border-radius: 10px;
+            align-items: center;
+            text-align: left;
         }
     }
 
