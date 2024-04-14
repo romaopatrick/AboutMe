@@ -6,7 +6,7 @@ import { CustomScroll } from "react-custom-scroll";
 export function TechnologyStack() {
     return (
         <CustomScroll heightRelativeToParent="100%">
-            <Flex className="technology-stack-container" vertical>
+            <Flex className="technology-stack-container " vertical>
                 <Title>Technology Stack</Title>
                 <br />
                 <br />
