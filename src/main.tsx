@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.scss'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Career } from './components/aboutme/index.tsx'
-import { JobExperiences } from './components/job-experiences/job-experiences.tsx'
+import { JobExperiences } from './components/job-experiences/index.tsx'
 import { TechnologyStack } from './components/technology-stack/index.tsx'
 import { Contact } from './components/contact/index.tsx'
 

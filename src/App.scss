@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
 
   .ant-layout-header {
     background: transparent !important;
@@ -8,8 +8,12 @@
   }
 
   .ant-layout-content {
-    width: 100vw;
+    width: 100%;
     overflow: auto;
     padding: 0;
   }
+}
+
+.page {
+  padding-top: 50px;
 }

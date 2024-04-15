@@ -2,11 +2,9 @@ import { Flex } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
 import './index.scss';
-import { CustomScroll } from "react-custom-scroll";
 export function TechnologyStack() {
     return (
-        <CustomScroll heightRelativeToParent="100%">
-            <Flex className="technology-stack-container " vertical>
+            <Flex className="page technology-stack-container " vertical>
                 <Title>Technology Stack</Title>
                 <br />
                 <br />
@@ -46,6 +44,5 @@ export function TechnologyStack() {
                     </Flex>
                 </Flex>
             </Flex>
-        </CustomScroll>
     )
 }

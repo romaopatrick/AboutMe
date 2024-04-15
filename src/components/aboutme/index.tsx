@@ -4,11 +4,9 @@ const imgpath = 'https://media.licdn.com/dms/image/D4D03AQGpmZMI4iYPSg/profile-d
 import './index.scss'
 import Paragraph from "antd/es/typography/Paragraph";
 import { Presentation } from "./presentation";
-import { CustomScroll } from "react-custom-scroll";
-
 export function Career() {
-    return <CustomScroll heightRelativeToParent="100%">
-        <Flex className="career-container" vertical align="center">
+    return (
+        <Flex className="page career-container" vertical align="center">
             <div className="title-container">
                 <Avatar
                     size={200}
@@ -28,5 +26,5 @@ export function Career() {
             <br />
             <Presentation />
         </Flex >
-    </CustomScroll>
+    )
 }

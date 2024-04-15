@@ -1,11 +1,20 @@
 .header-container {
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        color: white;
+        margin: 0;
+    }
     .ant-menu {
-        width: 100%;
+        width: 50%;
         font-family: inherit;
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+        justify-content: end;
         background: transparent !important;
+
         .ant-menu-item-selected {
             background: transparent;
             color: rgb(0, 255, 132);
@@ -22,8 +31,8 @@
     }
 
     .burger-dropdown {
-        height: 50px;
-        width: 12vw;
+        height: 100%;
+        width: 70px;
         border-radius: 5px;
         background: transparent !important;
         border: 1px solid rgb(4, 210, 111) !important;

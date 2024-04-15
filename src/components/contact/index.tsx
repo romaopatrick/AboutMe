@@ -6,7 +6,6 @@ import Github from "/assets/icons/github.svg";
 
 import { Link } from "react-router-dom";
 import "./index.scss"
-import { CustomScroll } from "react-custom-scroll";
 
 const { Title } = Typography
 const urls = {
@@ -19,34 +18,32 @@ const urls = {
 
 export function Contact() {
     return (
-        <CustomScroll heightRelativeToParent="100%">
-            <Flex className="contact-container" vertical>
-                <Title level={1}>Contacts</Title>
-                <Link to={urls.linkedIn} target="_blank">
-                    <Flex className="item-container">
-                        <img src={LinkedIn.toString()} width={60} />
-                        <Title className="text" level={2} >patrick-hernandez</Title>
-                    </Flex>
-                </Link>
-                <Link to={urls.whatsapp} target="_blank">
-                    <Flex className="item-container">
-                        <img src={Whatspapp.toString()} width={60} />
-                        <Title className="text" level={2} >+55 (11) 91421-8152</Title>
-                    </Flex>
-                </Link>
-                <Link to={urls.gmail} target="_blank">
-                    <Flex className="item-container">
-                        <img src={Gmail.toString()} width={60} />
-                        <Title className="text" level={2} >patrickromao2001@gmail.com</Title>
-                    </Flex>
-                </Link>
-                <Link to={urls.github} target="_blank">
-                    <Flex className="item-container">
-                        <img className="github-img" src={Github.toString()} width={60} />
-                        <Title className="text" level={2} >romaopatrick</Title>
-                    </Flex>
-                </Link>
-            </Flex>
-        </CustomScroll>
+        <Flex className="page contact-container" vertical>
+            <h1>Contacts</h1>
+            <Link to={urls.linkedIn} target="_blank">
+                <Flex className="item-container">
+                    <img src={LinkedIn.toString()} width={55} />
+                    <Title className="text" level={3} >patrick-hernandez</Title>
+                </Flex>
+            </Link>
+            <Link to={urls.whatsapp} target="_blank">
+                <Flex className="item-container">
+                    <img src={Whatspapp.toString()} width={55} />
+                    <Title className="text" level={3} >+55 (11) 91421-8152</Title>
+                </Flex>
+            </Link>
+            <Link to={urls.gmail} target="_blank">
+                <Flex className="item-container">
+                    <img src={Gmail.toString()} width={55} />
+                    <Title className="text" level={3} >patrickromao2001@gmail.com</Title>
+                </Flex>
+            </Link>
+            <Link to={urls.github} target="_blank">
+                <Flex className="item-container">
+                    <img className="github-img" src={Github.toString()} width={55} />
+                    <Title className="text" level={3} >romaopatrick</Title>
+                </Flex>
+            </Link>
+        </Flex>
     )
 }

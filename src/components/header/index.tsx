@@ -1,67 +1,58 @@
-import { Dropdown, Flex, Menu, MenuProps } from "antd";
+import { Dropdown, Flex, Menu } from "antd";
 import './index.scss';
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
 import { MenuOutlined } from '@ant-design/icons'
+
+const items = [
+    {
+        label: 'About Me',
+        key: '/',
+    },
+    {
+        label: 'Experience',
+        key: '/jobexperiences',
+    },
+    {
+        label: 'Technology Stack',
+        key: '/technologystack',
+    },
+    {
+        label: 'Contacts',
+        key: '/contact',
+    },
+]
+
+
+const itemsStyle: React.CSSProperties = {
+    color: 'white',
+    fontFamily: 'Share Tech", Inter, Avenir, Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    padding: '16px',
+}
+
+const selectedStyle: React.CSSProperties = {
+    backgroundColor: 'rgb(0, 255, 132)',
+    fontFamily: 'Share Tech", Inter, Avenir, Helvetica, Arial, sans-serif',
+    fontWeight: 'bold',
+    color: 'black',
+    padding: '16px',
+}
+
+
 export function Header() {
     const navigate = useNavigate();
     const shouldRenderMenuBurger = useMediaQuery({ maxWidth: 574 })
-    const itemsStyle: React.CSSProperties = {
-        color: 'white',
-        fontFamily: 'Share Tech", Inter, Avenir, Helvetica, Arial, sans-serif',
-        fontWeight: 'bold',
-    }
+    const location = useLocation()
 
-    const selectedStyle: React.CSSProperties = {
-        backgroundColor: 'rgb(0, 255, 132)',
-        fontFamily: 'Share Tech", Inter, Avenir, Helvetica, Arial, sans-serif',
-        fontWeight: 'bold',
-        color: 'black'
-    }
-
-
-    const items = [
-        {
-            label: 'About Me',
-            key: '/',
-            onClick: () => {
-                navigate('/')
-            }
-        },
-        {
-            label: 'Experience',
-            key: '/jobexperiences',
-            onClick: () => {
-                navigate('/jobexperiences')
-            }
-        },
-        {
-            label: 'Technology Stack',
-            key: '/technologystack',
-            onClick: () => {
-                navigate('/technologystack')
-            }
-        },
-        {
-            label: 'Contacts',
-            key: '/contact',
-            onClick: () => {
-                navigate('/contact')
-            }
-        },
-
-    ]
-    const [selected, select] = useState(items[0])
-    const onMenuSelect: MenuProps['onSelect'] = (info) => {
-        select(items.find(x => x.key === info.key)!)
-    }
+    const selected = items.find(x => x.key === location.pathname) ?? items[0]
 
     function getItemStyle(itemKey: string) {
         return selected?.key == itemKey ? selectedStyle : itemsStyle
     }
 
     return <Flex className="header-container">
+        <h1><i>P. R. H.</i></h1>
         {
             shouldRenderMenuBurger
                 ? <Dropdown
@@ -72,7 +63,7 @@ export function Header() {
                         selectable: true,
                         selectedKeys: [selected.key],
                         theme: 'dark',
-                        onSelect: onMenuSelect,
+                        onSelect: (info) => navigate(info.key),
                         className: 'burger-menu',
                         style: {
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -80,7 +71,7 @@ export function Header() {
                         }
                     }}
                 >
-                    <MenuOutlined className="burger-icon" style={{ fontSize: '23px' }} />
+                    <MenuOutlined className="burger-icon" style={{ fontSize: '26px' }} />
                 </Dropdown>
 
                 : <Menu
@@ -88,7 +79,7 @@ export function Header() {
                     mode="horizontal"
                     defaultSelectedKeys={[selected.key]}
                     selectedKeys={[selected.key]}
-                    onSelect={onMenuSelect}
+                    onSelect={(info) => navigate(info.key)}
                     items={items}
                 />
         }

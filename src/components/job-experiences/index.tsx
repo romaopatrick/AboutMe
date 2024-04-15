@@ -2,11 +2,9 @@ import { Flex } from "antd";
 import Title from "antd/es/typography/Title";
 import "./index.scss"
 import Paragraph from "antd/es/typography/Paragraph";
-import { CustomScroll } from "react-custom-scroll";
 
 export function JobExperiences() {
-    return <CustomScroll heightRelativeToParent="100%">
-        <Flex className="worked-in-container" vertical>
+    return <Flex className="page worked-in-container" vertical>
             <Title>Job Experiences</Title>
             <br />
             <Flex className="list">
@@ -99,6 +97,5 @@ export function JobExperiences() {
                 </Flex>
             </Flex>
         </Flex>
-    </CustomScroll>
 
 }
