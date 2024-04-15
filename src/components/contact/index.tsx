@@ -29,7 +29,7 @@ export function Contact() {
             <Link to={urls.whatsapp} target="_blank">
                 <Flex className="item-container">
                     <img src={Whatspapp.toString()} width={55} />
-                    <Title className="text" level={3} >+55 (11) 91421-8152</Title>
+                    <Title className="text" level={3} >Patrick Romão (PET)</Title>
                 </Flex>
             </Link>
             <Link to={urls.gmail} target="_blank">

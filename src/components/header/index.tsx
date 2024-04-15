@@ -42,7 +42,7 @@ const selectedStyle: React.CSSProperties = {
 
 export function Header() {
     const navigate = useNavigate();
-    const shouldRenderMenuBurger = useMediaQuery({ maxWidth: 574 })
+    const shouldRenderMenuBurger = useMediaQuery({ maxWidth: 989 })
     const location = useLocation()
 
     const selected = items.find(x => x.key === location.pathname) ?? items[0]

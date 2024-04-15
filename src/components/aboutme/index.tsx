@@ -1,8 +1,9 @@
 import { Avatar, Flex } from "antd";
 import Title from "antd/es/typography/Title";
-const imgpath = 'https://media.licdn.com/dms/image/D4D03AQGpmZMI4iYPSg/profile-displayphoto-shrink_800_800/0/1712949525345?e=1718236800&v=beta&t=gneyXGi8dG5jQADGtVWBJRav8kNW-1Ps0ujxyibuIvs'
 import './index.scss'
 import Paragraph from "antd/es/typography/Paragraph";
+import Me from "/assets/me.jpg";
+
 import { Presentation } from "./presentation";
 export function Career() {
     return (
@@ -10,7 +11,7 @@ export function Career() {
             <div className="title-container">
                 <Avatar
                     size={200}
-                    src={imgpath} />
+                    src={Me} />
                 <Flex vertical className="title-description-container">
                     <Title style={{ margin: 0 }}>
                         Patrick Romão Hernandez
@@ -18,7 +19,6 @@ export function Career() {
                     <Title style={{ marginTop: '15px' }} level={2} color="">
                         <i>Full Stack Software Engineer</i>
                     </Title>
-
                     <Paragraph className="paragraph"><i>Brazil</i></Paragraph>
                 </Flex>
             </div>
