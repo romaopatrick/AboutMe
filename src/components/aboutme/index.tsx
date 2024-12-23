@@ -2,16 +2,16 @@ import { Avatar, Flex } from "antd";
 import Title from "antd/es/typography/Title";
 import './index.scss'
 import Paragraph from "antd/es/typography/Paragraph";
-import Me from "/assets/me.jpg";
+import Me from "/assets/lkdin.jpeg";
 
 import { Presentation } from "./presentation";
 export function Career() {
     return (
         <Flex className="page career-container" vertical align="center">
             <div className="title-container">
-                <Avatar
-                    size={200}
-                    src={Me} />
+                <img
+                    src={Me}
+                    />
                 <Flex vertical className="title-description-container">
                     <Title style={{ margin: 0 }}>
                         Patrick Romão Hernandez
