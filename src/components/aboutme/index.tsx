@@ -1,4 +1,4 @@
-import { Avatar, Flex } from "antd";
+import { Flex } from "antd";
 import Title from "antd/es/typography/Title";
 import './index.scss'
 import Paragraph from "antd/es/typography/Paragraph";

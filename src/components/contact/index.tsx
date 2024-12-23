@@ -10,7 +10,7 @@ import "./index.scss"
 const { Title } = Typography
 const urls = {
     linkedIn: 'https://linkedin.com/in/patrick-hernandez-874318176',
-    whatsapp: 'https://wa.me/+5511914218152',
+    whatsapp: 'https://wa.me/+5511920500408',
     gmail: 'http://mail.google.com/mail?view=cm&fs=1&to=patrickromao2001@gmail.com',
     github: 'https://github.com/romaopatrick'
 }
@@ -29,7 +29,7 @@ export function Contact() {
             <Link to={urls.whatsapp} target="_blank">
                 <Flex className="item-container">
                     <img src={Whatspapp.toString()} width={55} />
-                    <Title className="text" level={3} >Patrick Romão (PET)</Title>
+                    <Title className="text" level={3} >Patrick Hernandez</Title>
                 </Flex>
             </Link>
             <Link to={urls.gmail} target="_blank">
