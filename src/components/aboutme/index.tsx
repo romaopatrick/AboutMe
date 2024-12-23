@@ -17,7 +17,7 @@ export function Career() {
                         Patrick Romão Hernandez
                     </Title>
                     <Title style={{ marginTop: '15px' }} level={2} color="">
-                        <i>Full Stack Software Engineer</i>
+                        <i>Tech Lead - Full Cycle</i>
                     </Title>
                     <Paragraph className="paragraph"><i>Brazil</i></Paragraph>
                 </Flex>
