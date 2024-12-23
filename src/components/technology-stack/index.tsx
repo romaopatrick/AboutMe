@@ -13,12 +13,12 @@ export function TechnologyStack() {
                     <Flex vertical className="endark">
                         <Title level={3}>Backend</Title>
                         <br />
-                        <Paragraph className="paragraph"> .NET | Go | Python | Rust | C++ | Node | Java</Paragraph>
+                        <Paragraph className="paragraph"> .NET | Go | Python | Rust | C++ | Node | Nest | Java</Paragraph>
                     </Flex>
                     <Flex vertical className="endark">
                         <Title level={3}>Frontend</Title>
                         <br />
-                        <Paragraph className="paragraph"> React | Angular | Vue | Antd | Solid | HTML5 | HTML6</Paragraph>
+                        <Paragraph className="paragraph"> React | Next | Angular | Vue  | Solid | HTML5 | HTML6 | Server Side Rendering</Paragraph>
                     </Flex>
                     <Flex vertical className="endark">
                         <Title level={3}>Mobile</Title>
@@ -40,7 +40,7 @@ export function TechnologyStack() {
                     <Flex vertical className="endark">
                         <Title level={3}>Architetures</Title>
                         <br />
-                        <Paragraph className="paragraph">Micro-services | DDD | MVC | Monolith | Embedded Software | Actors </Paragraph>
+                        <Paragraph className="paragraph">Micro-services | DDD | MVC | Monolith | Embedded Software | Actors | Hexagonal | Modules </Paragraph>
                     </Flex>
                 </Flex>
             </Flex>
